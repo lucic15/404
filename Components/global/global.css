@@ -1,0 +1,59 @@
+@import 'colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=JetBrains+Mono:wght@300;400;500&family=Lato&family=Roboto&display=swap');
+*{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:500;
+  
+}
+  
+body {
+  background-color: var(--secondary-color);
+}
+/*Navbar*/
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 1px 5px 13px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 5px 13px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 13px -2px rgba(0, 0, 0, 0.75);
+  }
+
+.nav-item a,.navbar-brand{
+    color:var(--text-color)
+}
+.form-control{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.form-control:focus{
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+.form-control::placeholder{
+  color: var(--text-color);
+}
+.dropdown-item:focus{
+background-color: var(--secondary-color);
+}
+
+.navbar-toggler:focus{
+  box-shadow: 1px -1px 29px 1px rgba(0,0,0,0.67);
+  -webkit-box-shadow: 1px -1px 29px 1px rgba(0,0,0,0.67);
+  -moz-box-shadow: 1px -1px 29px 1px rgba(0,0,0,0.67);
+}
+@media (min-width:992px) {
+  .dropdown-menu{
+    margin: 20px -155px;
+  }
+  .hidden{
+    display: none;
+  }
+}
+@media (max-width:992px) {
+  .hidden{
+    display: block;
+  }
+  .profile{
+    display: none;
+  }
+}
+
