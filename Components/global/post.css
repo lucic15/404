@@ -1,0 +1,135 @@
+@import 'darkPallete.css';
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postContainer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    border: 2px solid var(--text-color);
+    margin: 25px;
+    padding: 25px;
+    gap: 15px;
+    color: var(--text-color);
+    border-radius: 5%;
+}
+.postTitle,.postText{
+    display: flex;
+    flex-direction: column;
+}
+.titleArea,.textArea{
+    outline: none;
+border: 0;
+}
+.titleArea{
+ width: 225px;
+ border-radius: 5px;
+}
+.textArea{
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    }
+    .postFile{
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        border-radius: 5px;
+    }
+.postBtn{
+    width: 225px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: #27AE60 2px solid;
+    color: #27AE60;
+}
+.postBtn:hover{
+    background-color: #27AE60;
+border-radius: 5px;
+color: var(--white-text-color);
+}
+#fileInput:hover{
+background-color: var(--light-color);
+border: var(--text-color) 1px solid;
+border-radius: 5px;
+color: var(--white-text-color);
+}
+.post{
+    color: var(--text-color);
+    margin: 50px;
+}
+.post p{
+    max-width: 500px;
+}
+.card{
+    margin: 50px;
+    width: 24rem !important;
+
+}
+.fa-xmark{
+    position: absolute;
+    margin-left: 410px;
+    font-size: 25px;
+}
+
+
+@media (max-width:650px) {
+    .postContainer{
+        width: 350px;
+    }
+    .fa-xmark{
+        margin-left: 265px;
+    }
+    .card{
+        margin: 50px;
+        width: 18rem !important;
+    
+    }
+    .textArea{
+        width: 225px;
+    }
+    .postFile{
+        width: 225px;
+    }
+    .post{
+        width: 225px;
+    }
+    .post img{
+        width: 225px;
+    }
+}
+
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+
+.btn{
+    margin-top: 25px;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 10px 55px;
+}
+.btn:hover{
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 10px 55px;
+    color: var(--secondary-color);
+}

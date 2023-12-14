@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #ffffff
+  --primary-color: #ffffff;
   --secondary-color: #e6edf3;
   --accent-color: #1c7ed6;
-  --side-color: #ffffff;
   --light-color: #e6edf3;
   --text-color: #36393f;
-  --discord-color:#212429;
+  --white-text-color:#e6edf3;
+  --side-color:#232831;
 }

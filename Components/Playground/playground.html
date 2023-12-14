@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto px-2 mb-2 mb-lg-0">
           <li class="nav-item"><a href="../Home/home.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Post</a></li>
+          <li class="nav-item"><a class="nav-link" id="post-btn" onclick="openPostPopup()">Post</a></li>
           <li class="nav-item"><a href="" class="nav-link">Explore</a></li>
           <li class="nav-item"><a href="../Playground/playground.html" class="nav-link">Playground</a></li>
           <li class="nav-item dropdown hidden">
@@ -43,18 +43,17 @@
 
         <form class="d-flex me-2 search" role="search">
           <input class="form-control me-2" type="search" placeholder="Type..." aria-label="Search">
-          <button class="btn btn-outline-success" ype="submit">Search</button>
         </form>
         <div class="profile navbar-nav dropdown">
           <li class="nav-item special profile mx-3">
-            <input type="checkbox" id="switch" checked/>
-            <label for="switch" class="switch" >Light Mode</label>
+            <input type="checkbox" id="switch" checked />
+            <label for="switch" class="switch">Light Mode</label>
           </li>
           <img src="../../Images/787248.png" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
             aria-expanded="false" width="40px" alt="">
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">...</a></li>
+            <li><a class="dropdown-item" href="../Login/login.html">Log out</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -62,22 +61,20 @@
           </ul>
         </div>
       </div>
-
     </div>
-
   </nav>
 
     <div class="container">
         <div class="left">
-            <label><i class="fa-brands fa-html5" style="color: #3c4c68;"></i>HTML</label>
+            <label><i class="fa-brands fa-html5" style="color: #fff;"></i>HTML</label>
             <textarea id="html-code" onkeyup="run()"></textarea>
-            <label><i class="fa-brands fa-css3-alt" style="color: #3a5788;"></i>CSS</label>
+            <label><i class="fa-brands fa-css3-alt" style="color: #fff;"></i>CSS</label>
             <textarea id="css-code" onkeyup="run()"></textarea>
-            <label><i class="fa-brands fa-js" style="color: #7a879f;"></i>JavaScript</label>
+            <label><i class="fa-brands fa-js" style="color: #fff;"></i>JavaScript</label>
             <textarea id="js-code" onkeyup="run()"></textarea>
         </div>
         <div class="right">
-            <label for=""><i class="fa-solid fa-terminal" style="color: #4e6997;"></i>Output</label>
+            <label for=""><i class="fa-solid fa-terminal" style="color: #fff;"></i>Output</label>
             <iframe id="output"></iframe>
         </div>
     </div>
@@ -86,7 +83,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ef882f519f.js" crossorigin="anonymous"></script>
-    <script src="../Home/home.js"></script>
-</body>
+    <script src="../Home/themeSwitcher.js"></script>
+  </body>
 
 </html>
