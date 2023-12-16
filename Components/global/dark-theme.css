@@ -21,11 +21,12 @@ body {
     color:var(--text-color)
 }
 .form-control{
-  background-color: var(--primary-color);
+  background-color: #141E30;
   color: var(--text-color);
+  border-radius: 40px;
 }
 .form-control:focus{
-  background-color: var(--secondary-color);
+  background-color: #0f1624;
   color: var(--text-color);
 }
 .form-control::placeholder{
@@ -56,7 +57,7 @@ input[type=checkbox]{
 	text-indent: -9999px;
 	width: 50px;
 	height: 25px;
-	background: var(--light-color);
+	background: #141E30;
 	display: block;
 	border-radius: 25px;
 	position: relative;
@@ -72,10 +73,13 @@ input[type=checkbox]{
 	background: var(--text-color);
 	border-radius: 22px;
 	transition: 0.3s;
+  background-color: #141E30 ;
+  color: #141E30;
+
 }
 
 input:checked + .switch {
-	background: var(--light-color);
+	background: #0f1624;
 }
 
 input:checked + .switch:after {
@@ -124,9 +128,9 @@ input:checked + .switch:after {
 }
 
 body{
-  background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #141E30;  
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+background: linear-gradient(to right, #243B55, #141E30); 
 }
 
 .navbar{

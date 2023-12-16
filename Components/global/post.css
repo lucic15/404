@@ -18,6 +18,9 @@ main{
     gap: 15px;
     color: var(--text-color);
     border-radius: 5%;
+    position: absolute;
+    z-index: 4;
+    background-color: #141E30;
 }
 .postTitle,.postText{
     display: flex;
@@ -123,7 +126,7 @@ color: var(--white-text-color);
 
 .btn{
     margin-top: 25px;
-    color: var(--text-color);
+    color: var(--white-text-color);
     border: 1px solid var(--text-color);
     padding: 10px 55px;
 }
